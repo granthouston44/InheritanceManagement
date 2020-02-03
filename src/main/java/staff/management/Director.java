@@ -18,4 +18,10 @@ public class Director extends Manager {
     public void setBudget(double budget) {
         this.budget = budget;
     }
+
+    public void payBonus(){
+        double bonus = super.getSalary() * 0.02;
+        super.setSalary(super.getSalary() + bonus);
+    }
+
 }

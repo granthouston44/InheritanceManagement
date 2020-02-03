@@ -21,4 +21,5 @@ public class Manager extends Employee {
     public void setDeptName(String deptName) {
         this.deptName = deptName;
     }
+
 }

@@ -34,25 +34,33 @@ public class ManagerTest {
     @Test
     public void canSetSalary(){
         manager.setSalary(2);
-        assertEquals(2, manager.getSalary());
+        assertEquals(2, manager.getSalary(), 0.1);
     }
 
     @Test
     public void canRaiseSalary(){
         manager.raiseSalary(0.02);
-        assertEquals(30600, manager.getSalary());
+        assertEquals(30600, manager.getSalary(), 0.1);
     }
 
     @Test
     public void canPayBonus(){
         manager.payBonus();
-        assertEquals(30300, manager.getSalary());
+        assertEquals(30300, manager.getSalary(), 0.1);
     }
 
     @Test
     public void cantRaiseNegative(){
         manager.raiseSalary(-1);
-        assertEquals(30000, manager.getSalary());
+        assertEquals(30000, manager.getSalary(), 0.1);
     }
+
+    @Test
+    public void cantGiveEmptyStringToChangeName(){
+        manager.setName("");
+        assertEquals("Yer auld da", manager.getName());
+    }
+
+
 
 }

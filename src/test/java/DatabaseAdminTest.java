@@ -30,19 +30,19 @@ public class DatabaseAdminTest {
     @Test
     public void canSetSalary(){
         dataAdmin.setSalary(2);
-        assertEquals(2, dataAdmin.getSalary());
+        assertEquals(2, dataAdmin.getSalary(), 0.1);
     }
 
     @Test
     public void canRaiseSalary(){
         dataAdmin.raiseSalary(0.02);
-        assertEquals(26520, dataAdmin.getSalary());
+        assertEquals(26520, dataAdmin.getSalary(), 0.1);
     }
 
     @Test
     public void canPayBonus(){
         dataAdmin.payBonus();
-        assertEquals(26260, dataAdmin.getSalary());
+        assertEquals(26260, dataAdmin.getSalary(), 0.1);
     }
 
 
