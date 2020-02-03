@@ -10,7 +10,7 @@ public class ManagerTest {
 
     @Before
     public void before(){
-        manager = new Manager("Yer auld da", "JX999999", 30000);
+        manager = new Manager("Yer auld da", "JX999999", 30000, "ballers");
     }
 
     @Test

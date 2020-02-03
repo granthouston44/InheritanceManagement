@@ -10,4 +10,12 @@ public class Director extends Manager {
         super(name, ni, salary, deptName);
         this.budget = budget;
     }
+
+    public double getBudget() {
+        return budget;
+    }
+
+    public void setBudget(double budget) {
+        this.budget = budget;
+    }
 }
