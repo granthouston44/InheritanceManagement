@@ -61,6 +61,12 @@ public class ManagerTest {
         assertEquals("Yer auld da", manager.getName());
     }
 
+    @Test
+    public void cannotGiveNullName(){
+        manager.setName(null);
+        assertEquals("Yer auld da", manager.getName());
+    }
+
 
 
 }
